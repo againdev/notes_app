@@ -1,0 +1,115 @@
+.app {
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  padding: 30px 15px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.note-form,
+.search-bar,
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.note-form input,
+.note-form textarea,
+.search-bar input,
+.edit-block input,
+.edit-block textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.note-form textarea,
+.edit-block textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+  margin-right: 8px;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.filter-buttons button {
+  background-color: #6b7280;
+}
+
+.filter-buttons .active {
+  background-color: #111827;
+}
+
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.note-item {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.note-item.important {
+  border-left: 6px solid #f59e0b;
+  background-color: #fff8e7;
+}
+
+.note-content h3 {
+  margin: 0 0 8px 0;
+}
+
+.note-content p {
+  margin: 0 0 10px 0;
+  color: #444;
+}
+
+.note-actions {
+  margin-top: 10px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #f59e0b;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
