@@ -11,18 +11,18 @@ function NoteForm({
     <div className="note-form">
       <input
         type="text"
-        placeholder="Enter note title..."
+        placeholder="Заголовок заметки…"
         value={titleValue}
         onChange={(e) => setTitleValue(e.target.value)}
       />
 
       <textarea
-        placeholder="Enter note text..."
+        placeholder="Текст заметки…"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
 
-      <button onClick={handleAddNote}>Add Note</button>
+      <button onClick={handleAddNote}>Добавить заметку</button>
     </div>
   );
 }

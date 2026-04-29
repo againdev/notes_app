@@ -12,7 +12,7 @@ function NoteItem({
 
   const saveEdit = () => {
     if (editTitle.trim() === "" || editText.trim() === "") {
-      alert("Title and text cannot be empty.");
+      alert("Заголовок и текст не могут быть пустыми.");
       return;
     }
 
@@ -36,8 +36,8 @@ function NoteItem({
           />
 
           <div className="note-actions">
-            <button onClick={saveEdit}>Save</button>
-            <button onClick={() => setIsEditing(false)}>Cancel</button>
+            <button onClick={saveEdit}>Сохранить</button>
+            <button onClick={() => setIsEditing(false)}>Отмена</button>
           </div>
         </div>
       ) : (
@@ -45,15 +45,15 @@ function NoteItem({
           <div className="note-content">
             <h3>{note.title}</h3>
             <p>{note.text}</p>
-            {note.important && <span className="badge">Important</span>}
+            {note.important && <span className="badge">Важно</span>}
           </div>
 
           <div className="note-actions">
             <button onClick={() => handleToggleImportant(note.id)}>
-              {note.important ? "Unmark" : "Important"}
+              {note.important ? "Снять важность" : "Пометить важным"}
             </button>
-            <button onClick={() => setIsEditing(true)}>Edit</button>
-            <button onClick={() => handleDeleteNote(note.id)}>Delete</button>
+            <button onClick={() => setIsEditing(true)}>Изменить</button>
+            <button onClick={() => handleDeleteNote(note.id)}>Удалить</button>
           </div>
         </>
       )}

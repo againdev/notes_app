@@ -8,7 +8,7 @@ function NoteList({
   handleEditNote,
 }) {
   if (notes.length === 0) {
-    return <p className="empty-message">No notes found.</p>;
+    return <p className="empty-message">Заметок не найдено.</p>;
   }
 
   return (
